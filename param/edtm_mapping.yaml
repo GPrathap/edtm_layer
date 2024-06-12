@@ -1,0 +1,48 @@
+edtf_mapping:
+  ros__parameters:
+    resolution:  0.1
+    map_size_x:  200.0
+    map_size_y:  200.0
+    map_lef_bottom_x: -100.0 
+    map_lef_bottom_y: -100.0
+    map_size_z:  6.0
+    local_update_range_x:  5.5
+    local_update_range_y:  5.5
+    local_update_range_z:  4.5
+    obstacles_inflation: 0.099
+    local_map_margin: 30
+    ground_height: -4.0
+    cx: 160.5
+    cy: 120.5
+    fx: 277.19135641132203
+    fy: 277.19135641132203
+    use_depth_filter: true
+    depth_filter_tolerance: 0.15
+    depth_filter_maxdist:  5.0
+    depth_filter_mindist:  0.2
+    depth_filter_margin: 1
+    k_depth_scaling_factor: 1000.0
+    skip_pixel: 2
+    p_hit: 0.65
+    p_miss: 0.35
+    p_min: 0.12
+    p_max: 0.90
+    p_occ: 0.80
+    min_ray_length:  0.1
+    max_ray_length:  4.5
+    virtual_ceil_height: 2.5
+    visualization_truncate_height: 6.0
+    show_occ_time: false
+    pose_type: 2  
+    frame_id:  map
+    free_space_segmentation:
+      car_radius: 0.4
+      z_ground: 0.2 
+      free_segment_dim: [2.0, 0.5, 1.2]
+
+point_cloud_processing:
+  ros__parameters:
+    point_cloud_topic: "/front_camera/points"
+    point_cloud_topic_world: "/front_camera/world/points"
+    # point_cloud_topic: "/front_lidar/scan_PointCloud2"
+    # point_cloud_topic_world: "/lidar/world/points"
